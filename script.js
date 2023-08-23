@@ -1,4 +1,4 @@
-var timer = 60;
+var timer = 61;
 var score = 0;
 var hitrn = 0;
 var fscore;

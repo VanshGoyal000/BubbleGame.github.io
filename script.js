@@ -29,11 +29,12 @@ function runtimer() {
             timer--;
             document.querySelector("#timervalue").textContent = timer;
         }
+        else{
         document.querySelector(
             "#pbtm"
         ).innerHTML = `<h1> GAME OVER!</h1> <br> <h2>Score ${fscore} </h2> `;
         clearInterval(timerint);
-    
+        }
     } , 1000);
 }
 function getnewhit() {

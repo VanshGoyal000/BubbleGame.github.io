@@ -46,9 +46,16 @@ document.querySelector("#hitval").textContent=hitrn;
 document.querySelector("#pbtm").addEventListener("click" , function(details){
 var clickednum = Number( details.target.textContent);
 if(clickednum == hitrn){
+    var audio = new Audio("correct answer.mp3");
+        audio.play();
     increaseScore();
     makebubble();
     getnewhit();
+}
+       else {
+        var audio = new Audio("wrong answer.mp3");
+        audio.play();
+    }
 }
 
 })
